@@ -18,8 +18,8 @@ const Layout = () => {
   const { setUserDetails } = useContext(UserDetailContext);
 
   const { mutate } = useMutation({
-    mutationKey: [user?.email],
-    mutationFn: (token) => createUser(user?.email, token),
+    mutationKey: [user.email],
+    mutationFn: (token) => createUser(user.email, token),
   });
 
   useEffect(() => {
