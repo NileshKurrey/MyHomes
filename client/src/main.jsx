@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      domain="dev-n361pzjr66uahas0.us.auth0.com"
      clientId="9jbGsvTiiGSWrUerC95g5OWNGynjZlp8"
      authorizationParams={{
-      redirect_uri: "http://localhost:5173"
+      redirect_uri: "https://property-management-app-client.vercel.app/"
      }}
      audience="http://localhost:8000/"
      scope="openid profile email"
