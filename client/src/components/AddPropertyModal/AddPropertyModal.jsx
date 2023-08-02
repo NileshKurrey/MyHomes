@@ -8,7 +8,7 @@ import Facilities from "../Facilities/Facilities";
 
 const AddPropertyModal = ({ opened, setOpened }) => {
   const [active, setActive] = useState(0);
-
+  const { user } = useAuth0();
 
   const [propertyDetails, setPropertyDetails] = useState({
     title: "",
@@ -23,7 +23,7 @@ const AddPropertyModal = ({ opened, setOpened }) => {
       parkings: 0,
       bathrooms: 0,
     },
-    userEmail: '',
+    userEmail: user?.email,
   });
 
   const nextStep = () => {
