@@ -70,7 +70,6 @@ const Facilities = ({
         userEmail: user.email,
         
       })
-      console.log(user.email)
       setOpened(false)
       setActiveStep(0)
       refetchProperties()
