@@ -67,7 +67,7 @@ const Facilities = ({
           parkings: 0,
           bathrooms: 0,
         },
-        userEmail: user.email,
+        userEmail: user?.email,
         
       })
       setOpened(false)
